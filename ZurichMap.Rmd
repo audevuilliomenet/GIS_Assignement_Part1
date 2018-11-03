@@ -1,6 +1,8 @@
 ---
 title: "Zurich Map"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 
 The following code will generate a map from the city of Zurich showing the birth rate for each city borough. The map also shows the public space in Zurich, these spaces varied from small to big park. 
@@ -108,6 +110,7 @@ tm_shape(ZurichBirthMap)+
   tm_scale_bar(position = c("left","bottom"),size=0.4)+
 qtm(playground,symbols.col ="limegreen", symbols.size=0.1)
 ```
+
 Just because it is fancy, here is an interactive the map in an interactive way. The function tmap_mode() is now set as "view" in contrast to "plot". 
 
 ```{r}
