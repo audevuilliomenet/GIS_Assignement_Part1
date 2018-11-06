@@ -3,6 +3,7 @@ title: "Zurich Map"
 output:
   html_document:
     df_print: paged
+  pdf_document: default
 ---
 
 The following code will generate a map from the city of Zurich showing the birth rate for each city borough. The map also shows the public space in Zurich, these spaces varied from small to big park. 
@@ -127,11 +128,4 @@ tm_shape(ZurichBirthMap)+
   tm_compass(position = c("left","bottom"),type="8star",size=1.5)+
   tm_scale_bar(position = c("left","bottom"),size=0.4)+
 qtm(playground,symbols.col ="limegreen", symbols.size=0.3)
-```
-
-Attach to this document is the firt part of the exercise of doing a map. This map was done by using QGIS. Instead of mapping the birth rate in Zurich, I have chosen to map the sport participation for each London Borough and also add a layer for the park. The shapefile for the park in London contains the geography feature of the park, instead of dot, the surface area of each park is shown. 
-Unfortunately, I could not reproduce a similar map for Zurich because I could not find the statistical data regarding the sport participation for each borough but also the surface area and geometry for each park. My two maps are therefore different. And these represent one main limitation in mapping, namely the availability of open data!  
-
-```{r}
-knitr::include_graphics("Sport participation in London.png")
 ```
