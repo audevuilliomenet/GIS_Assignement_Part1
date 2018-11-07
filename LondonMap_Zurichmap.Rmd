@@ -26,8 +26,3 @@ If I now analyze the two maps following the following the checklist of Krygier a
 
 I think that the potential of R and the various library provide by the software open some interesting possibility to analyze data and spatially represent them, if more time is spent to learn the programming language. QGIS on the contrary allows great possibility for laying the maps. 
 
-```{r}
-install.packages("bibtex")
-library(bibtex)
-bib <- read.bib("gisbib/gisbib.bib")
-```
