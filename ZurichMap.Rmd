@@ -1,9 +1,7 @@
 ---
 title: "Zurich Map"
-output:
-  html_document:
-    df_print: paged
-  pdf_document: default
+output: html_document
+bibliography: Bibliography.bib
 ---
 
 The following code will generate a map from the city of Zurich showing the birth rate for each city borough. The map also shows the public space in Zurich, these spaces varied from small to big park. 
@@ -59,7 +57,7 @@ tm_shape(ZurichBirthMap)+
               palette="Blues",
               lwd=0.4,
               border.col="orange")+
-  tm_layout(main.title="Average Birth rate in year 2017", main.title.size=1, main.title.position = c("center","top"), frame=FALSE, legend.frame = TRUE,legend.frame.lwd = 0.5, legend.outside=TRUE, legend.title.size = 0.8, legend.position = c("right","bottom"))+
+  tm_layout(main.title="Average Birth rate in year 2017 in Zurich city", main.title.size=1, main.title.position = c("center","top"), frame=FALSE, legend.frame = TRUE,legend.frame.lwd = 0.5, legend.outside=TRUE, legend.title.size = 0.8, legend.position = c("right","bottom"))+
   tm_compass(position = c("left","bottom"),type="8star",size=1.5)+
   tm_scale_bar(position = c("left","bottom"),size=0.4)
 ```
@@ -81,7 +79,7 @@ tm_shape(ZurichBirthMap)+
               palette="Blues",
               lwd=0.4,
               border.col="orange")+
-  tm_layout(main.title="Average Birth rate in year 2017", main.title.size=1, main.title.position = c("center","top"), frame=FALSE, legend.frame = TRUE,legend.frame.lwd = 0.5, legend.outside=TRUE, legend.title.size = 0.8, legend.position = c("right","bottom"))+
+  tm_layout(main.title="Average Birth rate in year 2017 in Zurich city", main.title.size=1, main.title.position = c("center","top"), frame=FALSE, legend.frame = TRUE,legend.frame.lwd = 0.5, legend.outside=TRUE, legend.title.size = 0.8, legend.position = c("right","bottom"))+
   tm_compass(position = c("left","bottom"),type="8star",size=1.5)+
   tm_scale_bar(position = c("left","bottom"),size=0.4)+
 qtm(park)
@@ -106,7 +104,7 @@ tm_shape(ZurichBirthMap)+
               palette="Blues",
               lwd=0.4,
               border.col="orange")+
-  tm_layout(main.title="Average Birth rate in year 2017", main.title.size=1, main.title.position = c("center","top"), frame=FALSE, legend.frame = TRUE,legend.frame.lwd = 0.5, legend.outside=TRUE, legend.title.size = 0.8, legend.position = c("right","bottom"))+
+  tm_layout(main.title="Average Birth rate in year 2017 in Zurich city and playground location", main.title.size=0.8, main.title.position = c("center","top"), frame=FALSE, legend.frame = TRUE,legend.frame.lwd = 0.5, legend.outside=TRUE, legend.title.size = 0.8, legend.position = c("right","bottom"))+
   tm_compass(position = c("left","bottom"),type="8star",size=1.5)+
   tm_scale_bar(position = c("left","bottom"),size=0.4)+
 qtm(playground,symbols.col ="limegreen", symbols.size=0.1)
@@ -124,7 +122,7 @@ tm_shape(ZurichBirthMap)+
               alpha = 0.5,
               lwd=0.4,
               border.col="orange")+
-  tm_layout(main.title="Average Birth rate in year 2017", main.title.size=1, main.title.position = c("center","top"), frame=FALSE, legend.frame = TRUE,legend.frame.lwd = 0.5, legend.outside=TRUE, legend.title.size = 0.8, legend.position = c("right","bottom"))+
+  tm_layout(main.title="Average Birth rate in year 2017 in Zurich city and playground location", main.title.size=1, main.title.position = c("center","top"), frame=FALSE, legend.frame = TRUE,legend.frame.lwd = 0.5, legend.outside=TRUE, legend.title.size = 0.8, legend.position = c("right","bottom"))+
   tm_compass(position = c("left","bottom"),type="8star",size=1.5)+
   tm_scale_bar(position = c("left","bottom"),size=0.4)+
 qtm(playground,symbols.col ="limegreen", symbols.size=0.3)
